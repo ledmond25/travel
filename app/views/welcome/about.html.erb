@@ -1,0 +1,25 @@
+<!-- How would we change the background color of the entire page using a query string?
+use styles -->
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>
+
+<h1>About me</h1>
+<p>Lots of interesting stuffs.</p>
+<p>My favorite color is <%= @color %></p>
+<% if @size > 12 %>
+  <p>My shoe size is <%= @size %>. I have HUGE feet.</p>
+<% else %>
+  <p>My shoe size is <%= @size %></p>
+<% end %>
+
+<!--
+<p>My shoe size is <%= @size %></p>
+-->
+
+<!-- initial code
+<h1>Welcome#about</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+-->
